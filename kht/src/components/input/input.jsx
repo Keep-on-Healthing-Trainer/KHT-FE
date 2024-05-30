@@ -31,6 +31,11 @@ export const InputText = styled.input`
     border-radius: 10px;
     padding: 0 10px;
 
+    &:focus {
+        border: none;
+        outline: none;
+    }
+
     @media only screen and (max-width: ${breakpoints.medium}) {
         width: 500px;
     }
