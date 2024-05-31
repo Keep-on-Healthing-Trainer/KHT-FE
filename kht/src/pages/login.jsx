@@ -10,6 +10,10 @@ import Button from "../components/button/button";
 import BigLogo from "../assets/icon/bigLogo";
 
 function LoginPage() {
+  const onSignup = () => {
+    window.location.assign("/main");
+  };
+
   return (
     <Background>
       <BigLogo />
@@ -18,7 +22,7 @@ function LoginPage() {
         <Input innerText="아이디" name="text" />
         <Input innerText="비밀번호" name="password" />
       </Div>
-      <Button innerText="로그인" />
+      <Button innerText="로그인" onClick={() => onSignup()} />
     </Background>
   );
 }
@@ -40,6 +44,7 @@ export const LogoText = styled.div`
   font-size: 2.4em;
   font-weight: bold;
   color: ${color.Blue[8]};
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const Div = styled.div`

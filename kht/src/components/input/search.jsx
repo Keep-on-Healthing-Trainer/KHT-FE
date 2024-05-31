@@ -34,6 +34,7 @@ export const InputText = styled.input`
     padding: 0 10px;
     border-radius: 50px;
     color: ${color.Blue[10]};
+    font-weight: 500;
 
     &:focus {
         outline: none;

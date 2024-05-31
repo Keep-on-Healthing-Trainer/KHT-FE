@@ -12,6 +12,10 @@ import Arrow from "../assets/icon/arrow";
 import Footer from "../components/footer/footer";
 
 function BeforePage() {
+  const onLogin = () => {
+    window.location.assign("/login");
+  };
+
   return (
     <>
       <BackgroundBlue>
@@ -20,7 +24,7 @@ function BeforePage() {
             <Title>함께 만드는 건강한</Title>
             <Title>라이프 스타일</Title>
             <LittleTitle>지금 시작하는 건강한 하루, KHT와 함께해요.</LittleTitle>
-            <Button>
+            <Button onClick={() => onLogin()}>
               <Arrow></Arrow>
               KHT 시작하기
             </Button>
@@ -46,7 +50,7 @@ function BeforePage() {
             <Title>빠르게 확인하는</Title>
             <Title>TOP 10</Title>
             <LittleTitle>랭킹을 통해 서로 경쟁할 수 있어요.</LittleTitle>
-            <TextTop>TOP 10</TextTop>
+            <TextCenter>TOP 10</TextCenter>
             <TextBottom>결과를 통한 랭킹 서비스</TextBottom>
           </div>
         </DivBottom>
@@ -95,6 +99,7 @@ export const BackgroundWhite = styled.div`
 export const Title = styled.div`
   font-size: 2.5em;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const LittleTitle = styled.div`
@@ -202,6 +207,19 @@ export const TextTop = styled.div`
   border-radius: 5px;
   padding: 1vh 1vw;
   width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
+export const TextCenter = styled.div`
+  font-size: 0.8em;
+  font-weight: 500;
+  color: ${color.Black};
+  background-color: ${color.Gray[2]};
+  border-radius: 5px;
+  padding: 1vh 1vw;
+  width: 45px;
   display: flex;
   align-items: center;
   justify-content: flex-start;

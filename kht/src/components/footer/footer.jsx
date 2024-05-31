@@ -69,6 +69,7 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   gap: 0.5vw;
+  border: none;
 
   &:hover {
     cursor: pointer;

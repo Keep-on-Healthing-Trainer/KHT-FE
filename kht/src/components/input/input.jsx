@@ -19,7 +19,7 @@ export const Div = styled.div`
 
 export const Text = styled.div`
     font-size: 0.9em;
-    font-weight: 600;
+    font-weight: 500;
 `;
 
 export const InputText = styled.input`
@@ -30,6 +30,7 @@ export const InputText = styled.input`
     background-color: ${color.Gray[1]};
     border-radius: 10px;
     padding: 0 10px;
+    font-weight: 500;
 
     &:focus {
         border: none;

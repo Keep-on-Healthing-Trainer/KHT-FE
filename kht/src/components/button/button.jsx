@@ -6,12 +6,12 @@ import { breakpoints } from "../../styles/device";
 
 const Button = ( props ) => {
     return (
-        <Btn>{props.innerText}</Btn>
+        <Btn onClick={props.onClick}>{props.innerText}</Btn>
     );
 };
 
 export const Btn = styled.button`
-  font-size: 1em;
+  font-size: 1.2em;
   width: 31vw;
   height: 6vh;
   padding: 0 10px;
@@ -19,6 +19,8 @@ export const Btn = styled.button`
   background-color: ${color.Blue[8]};
   color: ${color.White};
   border-radius: 10px;
+  font-weight: 500;
+
   &:hover {
     cursor: pointer;
     background-color: ${color.Blue[7]};

@@ -8,6 +8,10 @@ import Input from "../components/input/input";
 import Button from "../components/button/button";
 
 function SignupPage() {
+  const onLogin = () => {
+    window.location.assign("/login");
+  };
+
   return (
     <Background>
     <LogoText>KH TRAINER</LogoText>
@@ -18,7 +22,7 @@ function SignupPage() {
       <Input innerText="비밀번호" name="password" />
       <Input innerText="비밀번호 확인" name="password" />
     </Div>
-    <Button innerText="회원가입" />
+    <Button innerText="회원가입" onClick={() => onLogin()} />
   </Background>
     );
   }
@@ -40,6 +44,7 @@ export const LogoText = styled.div`
   font-size: 2.4em;
   font-weight: bold;
   color: ${color.Blue[8]};
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const Div = styled.div`

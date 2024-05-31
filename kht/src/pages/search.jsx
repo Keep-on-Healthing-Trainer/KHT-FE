@@ -44,6 +44,7 @@ export const LogoText = styled.div`
   font-size: 2.4em;
   font-weight: bold;
   color: ${color.Blue[8]};
+  font-family: 'Roboto', sans-serif;
 `;
 
 export const Div = styled.div`

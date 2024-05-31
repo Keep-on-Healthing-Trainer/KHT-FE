@@ -7,16 +7,28 @@ import { breakpoints } from "../../styles/device";
 import Logo from "../../assets/icon/logo";
 
 const BeforeHeader = () => {
+  const onHome = () => {
+    window.location.assign("/");
+  };
+
+  const onLogin = () => {
+    window.location.assign("/login");
+  };
+
+  const onSignup = () => {
+    window.location.assign("/signup");
+  };
+
   return (
   <Background>
-    <LogoDiv>
+    <LogoDiv onClick={() => onHome()}>
       <Logo></Logo>
       <LogoText>KH TRAINER</LogoText>
     </LogoDiv>
     <LogoDiv>
-      <Button>로그인</Button>
+      <Button onClick={() => onLogin()}>로그인</Button>
       <Border></Border>
-      <Button>회원가입</Button>
+      <Button onClick={() => onSignup()}>회원가입</Button>
     </LogoDiv>
   </Background>
   );
@@ -28,11 +40,22 @@ export const Background = styled.div`
   display: flex;
   justify-content: space-around;
   border-bottom: solid 1px ${color.Gray[3]};
+
+  @media only screen and (max-width: ${breakpoints.small}) {
+    width: 700px;
+  }
 `;
 
 export const LogoDiv = styled.div`
   display: flex;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    cursor: pointer;
+  }
 `;
 
 export const LogoText = styled.div`
@@ -50,6 +73,7 @@ export const Button = styled.button`
   border: none;
   background-color: ${color.White};
   border-radius: 10px;
+  border: none;
 
   color: ${color.Gray[5]};
   font-weight: 600;
