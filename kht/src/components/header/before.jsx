@@ -40,6 +40,8 @@ export const Background = styled.div`
   display: flex;
   justify-content: space-around;
   border-bottom: solid 1px ${color.Gray[3]};
+  position: fixed;
+  background-color: ${color.White};
 
   @media only screen and (max-width: ${breakpoints.small}) {
     width: 700px;
