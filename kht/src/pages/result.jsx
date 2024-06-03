@@ -7,7 +7,7 @@ import { breakpoints } from "../styles/device";
 import NoResult from "../assets/icon/noResult";
 
 function ResultPage() {
-    const [ data, setData] = useState();
+    const [ data, setData] = useState("adsf");
 
   return (
   <Background>
@@ -65,7 +65,7 @@ function ResultPage() {
 
 export const Background = styled.div`
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,7 +77,7 @@ export const Background = styled.div`
 
 export const Center = styled.div`
   width: 50vw;
-  height: 94vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,6 +96,10 @@ export const Div = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    &:hover {
+        cursor: pointer;
+    }
 
     @media only screen and (max-width: ${breakpoints.small}) {
         width: 500px;

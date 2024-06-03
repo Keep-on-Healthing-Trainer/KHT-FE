@@ -62,7 +62,7 @@ function BeforePage() {
 
 export const BackgroundBlue = styled.div`
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   background-color: ${color.Blue[0]};
 
   display: flex;
@@ -80,7 +80,7 @@ export const BackgroundBlue = styled.div`
 
 export const BackgroundWhite = styled.div`
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   background-color: ${color.White};
 
   display: flex;

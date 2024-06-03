@@ -14,22 +14,22 @@ function SignupPage() {
 
   return (
     <Background>
-    <LogoText>KH TRAINER</LogoText>
-    <Div>
-      <Input innerText="이름" name="text" />
-      <Input innerText="아이디" name="text" />
-      <Input innerText="전화번호" name="text" />
-      <Input innerText="비밀번호" name="password" />
-      <Input innerText="비밀번호 확인" name="password" />
-    </Div>
-    <Button innerText="회원가입" onClick={() => onLogin()} />
-  </Background>
-    );
-  }
+      <LogoText>KH TRAINER</LogoText>
+      <Div>
+        <Input innerText="이름" name="text" />
+        <Input innerText="아이디" name="text" />
+        <Input innerText="전화번호" name="text" />
+        <Input innerText="비밀번호" name="password" />
+        <Input innerText="비밀번호 확인" name="password" />
+      </Div>
+      <Button innerText="회원가입" onClick={() => onLogin()} />
+    </Background>
+  );
+}
   
-  export const Background = styled.div`
+export const Background = styled.div`
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -23,7 +23,7 @@ function SearchPage() {
 
 export const Background = styled.div`
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   background-color: ${color.White};
 
   display: flex;

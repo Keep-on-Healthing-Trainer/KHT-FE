@@ -29,7 +29,7 @@ function LoginPage() {
 
 export const Background = styled.div`
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
