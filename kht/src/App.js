@@ -10,6 +10,7 @@ import LoginPage from "./pages/login";
 import SignupPage from "./pages/signup";
 import MainPage from "./pages/main";
 import SearchPage from "./pages/search";
+import ResultPage from "./pages/result";
 
 import BeforeLayout from "./navigation/BeforeLayout";
 import MainLayout from "./navigation/MainLayout";
@@ -25,6 +26,7 @@ function App() {
         </Route>
         <Route element={<MainLayout />}>
           <Route path="/main" element={<MainPage />} />
+          <Route path="/result" element={<ResultPage />}/>
           <Route path="/search" element={<SearchPage />} />
         </Route>
       </Routes>
