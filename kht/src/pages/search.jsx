@@ -8,6 +8,10 @@ import SearchInput from "../components/input/search";
 import BigLogo from "../assets/icon/bigLogo";
 
 function SearchPage() {
+  const onResult = () => {
+    window.location.assign("/result");
+  }
+
   return (
   <Background>
     <Tab>

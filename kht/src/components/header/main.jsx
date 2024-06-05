@@ -7,14 +7,22 @@ import { breakpoints } from "../../styles/device";
 import Logo from "../../assets/icon/logo";
 
 const MainHeader = () => {
+  const onHome = () => {
+    window.location.assign("/main");
+  }
+
+  const onSearch = () => {
+    window.location.assign("/search");
+  }
+
   return (
   <Background>
-    <LogoDiv>
+    <LogoDiv onClick={() => onHome()}>
       <Logo></Logo>
       <LogoText>KH TRAINER</LogoText>
     </LogoDiv>
     <LogoDiv>
-      <Button>검색하기</Button>
+      <Button onClick={() => onSearch()}>검색하기</Button>
     </LogoDiv>
   </Background>
   );
