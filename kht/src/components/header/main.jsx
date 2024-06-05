@@ -45,6 +45,12 @@ export const Background = styled.div`
 export const LogoDiv = styled.div`
   display: flex;
   align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    cursor: pointer;
+  }
 `;
 
 export const LogoText = styled.div`

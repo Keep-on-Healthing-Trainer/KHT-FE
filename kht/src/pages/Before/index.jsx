@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { styled } from "styled-components";
-import { color } from "../styles/theme";
-import { breakpoints } from "../styles/device";
+import { color } from "../../styles/theme";
+import { breakpoints } from "../../styles/device";
 
-import phoneImage from "../assets/image/phoneImage.png";
-import count from "../assets/image/count.png";
-import topTen from "../assets/image/topTen.png";
+import phoneImage from "../../assets/image/phoneImage.png";
+import count from "../../assets/image/count.png";
+import topTen from "../../assets/image/topTen.png";
 
-import Arrow from "../assets/icon/arrow";
-import Footer from "../components/footer/footer";
+import Arrow from "../../assets/icon/arrow";
+import Footer from "../../components/footer/footer";
 
 function BeforePage() {
   const onLogin = () => {

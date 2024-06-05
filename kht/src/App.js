@@ -5,12 +5,12 @@ import {
   Routes,
 } from "react-router-dom";
 
-import BeforePage from "./pages/before";
-import LoginPage from "./pages/login";
-import SignupPage from "./pages/signup";
-import MainPage from "./pages/main";
-import SearchPage from "./pages/search";
-import ResultPage from "./pages/result";
+import BeforePage from "./pages/Before";
+import LoginPage from "./pages/Login";
+import SignupPage from "./pages/Signup";
+import MainPage from "./pages/Main";
+import SearchPage from "./pages/Search";
+import ResultPage from "./pages/Result";
 
 import BeforeLayout from "./navigation/BeforeLayout";
 import MainLayout from "./navigation/MainLayout";

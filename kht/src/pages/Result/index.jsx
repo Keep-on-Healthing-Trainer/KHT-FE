@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { styled } from "styled-components";
-import { color } from "../styles/theme";
-import { breakpoints } from "../styles/device";
+import { color } from "../../styles/theme";
+import { breakpoints } from "../../styles/device";
 
-import NoResult from "../assets/icon/noResult";
+import NoResult from "../../assets/icon/noResult";
 
 function ResultPage() {
     const [ data, setData] = useState("adsf");

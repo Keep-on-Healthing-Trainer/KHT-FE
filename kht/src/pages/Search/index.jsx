@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { styled } from "styled-components";
-import { color } from "../styles/theme";
-import { breakpoints } from "../styles/device";
+import { color } from "../../styles/theme";
+import { breakpoints } from "../../styles/device";
 
-import SearchInput from "../components/input/search";
-import BigLogo from "../assets/icon/bigLogo";
+import SearchInput from "../../components/input/search";
+import BigLogo from "../../assets/icon/bigLogo";
 
 function SearchPage() {
   const onResult = () => {

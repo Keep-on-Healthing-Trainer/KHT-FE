@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { styled } from "styled-components";
-import { color } from "../styles/theme";
-import { breakpoints } from "../styles/device";
+import { color } from "../../styles/theme";
+import { breakpoints } from "../../styles/device";
 
-import Footer from "../components/footer/footer";
-import BackButton from "../assets/icon/backButton";
-import NextButton from "../assets/icon/nextButton";
+import Footer from "../../components/footer/footer";
+import BackButton from "../../assets/icon/backButton";
+import NextButton from "../../assets/icon/nextButton";
 
 function MainPage() {
   return (
