@@ -17,13 +17,15 @@ const MainHeader = () => {
 
   return (
   <Background>
-    <LogoDiv onClick={() => onHome()}>
-      <Logo></Logo>
-      <LogoText>KH TRAINER</LogoText>
-    </LogoDiv>
-    <LogoDiv>
-      <Button onClick={() => onSearch()}>검색하기</Button>
-    </LogoDiv>
+    <Div>
+      <LogoDiv onClick={() => onHome()}>
+        <Logo></Logo>
+        <LogoText>KH TRAINER</LogoText>
+      </LogoDiv>
+      <LogoDiv>
+        <Button onClick={() => onSearch()}>검색하기</Button>
+      </LogoDiv>
+    </Div>
   </Background>
   );
 }
@@ -33,10 +35,20 @@ export const Background = styled.div`
   height: 5.9vh;
   display: flex;
   justify-content: space-around;
-  border-bottom: solid 1px ${color.Gray[3]};
+  border-bottom: solid 1px ${color.Gray[2]};
   position: fixed;
   background-color: ${color.White};
 
+  @media only screen and (max-width: ${breakpoints.small}) {
+    width: 700px;
+  }
+`;
+
+export const Div = styled.div`
+  width: 65vw;
+  height: 5.9vh;
+  display: flex;
+  justify-content: space-between;
   @media only screen and (max-width: ${breakpoints.small}) {
     width: 700px;
   }
