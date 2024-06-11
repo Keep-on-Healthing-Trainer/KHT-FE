@@ -23,7 +23,7 @@ export const Text = styled.div`
 `;
 
 export const InputText = styled.input`
-    width: 30vw;
+    width: 34vw;
     height: 6vh;
     font-size: 1em;
     border: none;
