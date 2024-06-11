@@ -21,15 +21,17 @@ const BeforeHeader = () => {
 
   return (
   <Background>
-    <LogoDiv onClick={() => onHome()}>
-      <Logo></Logo>
-      <LogoText>KH TRAINER</LogoText>
-    </LogoDiv>
-    <LogoDiv>
-      <Button onClick={() => onLogin()}>로그인</Button>
-      <Border></Border>
-      <Button onClick={() => onSignup()}>회원가입</Button>
-    </LogoDiv>
+    <Div>
+      <LogoDiv onClick={() => onHome()}>
+        <Logo></Logo>
+        <LogoText>KH TRAINER</LogoText>
+      </LogoDiv>
+      <LogoDiv>
+        <Button onClick={() => onLogin()}>로그인</Button>
+        <Border></Border>
+        <Button onClick={() => onSignup()}>회원가입</Button>
+      </LogoDiv>
+    </Div>
   </Background>
   );
 }
@@ -38,11 +40,21 @@ export const Background = styled.div`
   width: 100%;
   height: 5.9vh;
   display: flex;
-  justify-content: space-around;
-  border-bottom: solid 1px ${color.Gray[3]};
+  justify-content: center;
+  border-bottom: solid 1px ${color.Gray[2]};
   position: fixed;
   background-color: ${color.White};
 
+  @media only screen and (max-width: ${breakpoints.small}) {
+    width: 700px;
+  }
+`;
+
+export const Div = styled.div`
+  width: 70vw;
+  height: 5.9vh;
+  display: flex;
+  justify-content: space-between;
   @media only screen and (max-width: ${breakpoints.small}) {
     width: 700px;
   }
