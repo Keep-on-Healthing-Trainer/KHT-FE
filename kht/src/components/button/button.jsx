@@ -12,7 +12,7 @@ const Button = ( props ) => {
 
 export const Btn = styled.button`
   font-size: 1.2em;
-  width: 31vw;
+  width: 35vw;
   height: 6vh;
   padding: 0 10px;
   border: none;
