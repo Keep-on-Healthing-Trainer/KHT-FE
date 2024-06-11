@@ -11,6 +11,7 @@ import SignupPage from "./pages/Signup";
 import MainPage from "./pages/Main";
 import SearchPage from "./pages/Search";
 import ResultPage from "./pages/Result";
+import DataPage from "./pages/Data";
 
 import BeforeLayout from "./navigation/BeforeLayout";
 import MainLayout from "./navigation/MainLayout";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/main" element={<MainPage />} />
           <Route path="/result" element={<ResultPage />}/>
           <Route path="/search" element={<SearchPage />} />
+          <Route path="/data" element={<DataPage />}/>
         </Route>
       </Routes>
     </BrowserRouter>
