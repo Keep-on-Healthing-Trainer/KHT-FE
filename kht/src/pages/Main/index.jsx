@@ -356,16 +356,17 @@ export const Background = styled.div`
 
 export const Top = styled.div`
   width: 100%;
-  height: 12vh;
-  box-shadow: 0px 5px 10px ${color.Gray[2]};
+  height: 6vh;
+  top: 6vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  position: fixed;
+  background-color: ${color.White};
 `
 
 export const TopDiv = styled.div`
-  width: 40%;
-  height: 6vh;
+  width: 45vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -380,12 +381,13 @@ export const TopText = styled.div`
 export const Bottom = styled.div`
   width: 100%;
   height: 218vh;
+  margin-top: 12vh;
   display: flex;
   justify-content: center;
 `
 
 export const BottomDiv = styled.div`
-  width: 40%;
+  width: 45vw;
   height: 218vh;
   display: flex;
   align-items: center;
@@ -395,7 +397,7 @@ export const BottomDiv = styled.div`
 export const Div = styled.div`
   width: 100%;
   height: 10vh;
-  border-bottom: solid 1px ${color.Gray[3]};
+  border-bottom: solid 1px ${color.Gray[2]};
   display: flex;
   align-items: center;
 `
@@ -410,7 +412,7 @@ export const Text = styled.div`
 export const Rank = styled.div`
   font-size: 1.3em;
   font-weight: 700;
-  color: ${color.Gray[3]};
+  color: ${color.Gray[2]};
   text-align: center;
 `
 
@@ -422,18 +424,17 @@ export const TextDiv = styled.div`
 `
 
 export const Profile = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   background-color: ${color.Black};
   border-radius: 50%;
 `
 
 export const ButtonDiv = styled.div`
-  width: 40%;
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 5vw;
 `
 
 export default MainPage;
