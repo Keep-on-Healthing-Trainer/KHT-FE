@@ -16,7 +16,7 @@ const SearchInput = ( props ) => {
 };
 
 export const Div = styled.div`
-    width: 40vw;
+    width: 45vw;
     height: 6vh;
     border: solid 1px ${color.Blue[10]};
     display: flex;
@@ -27,7 +27,7 @@ export const Div = styled.div`
 `;
 
 export const InputText = styled.input`
-    width: 35vw;
+    width: 40vw;
     height: 5vh;
     font-size: 1em;
     border: none;
