@@ -34,7 +34,7 @@ const Footer = () => {
 export const Background = styled.div`
   width: 100%;
   height: 20vh;
-  border-top: solid 1px ${color.Gray[3]};
+  border-top: solid 1px ${color.Gray[2]};
   display: flex;
   align-items: center;
   justify-content: space-evenly;
