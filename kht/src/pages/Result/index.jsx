@@ -5,9 +5,11 @@ import { color } from "../../styles/theme";
 import { breakpoints } from "../../styles/device";
 
 import NoResult from "../../assets/icon/noResult";
+import BackButton from "../../assets/icon/backButton";
+import NextButton from "../../assets/icon/nextButton";
 
 function ResultPage() {
-    const [ data, setData] = useState("adsf");
+    const [ data, setData] = useState("asdf");
 
   return (
   <Background>
@@ -22,7 +24,6 @@ function ResultPage() {
                         <Text>전화번호 : 01012345678</Text>
                     </TextDiv>
                 </Div>
-                <Border></Border>
                 <Div>
                     <Image></Image>
                     <TextDiv>
@@ -31,7 +32,6 @@ function ResultPage() {
                         <Text>전화번호 : 01012345678</Text>
                     </TextDiv>
                 </Div>
-                <Border></Border>
                 <Div>
                     <Image></Image>
                     <TextDiv>
@@ -40,7 +40,6 @@ function ResultPage() {
                         <Text>전화번호 : 01012345678</Text>
                     </TextDiv>
                 </Div>
-                <Border></Border>
                 <Div>
                     <Image></Image>
                     <TextDiv>
@@ -49,7 +48,14 @@ function ResultPage() {
                         <Text>전화번호 : 01012345678</Text>
                     </TextDiv>
                 </Div>
-                <Border></Border>
+                <Div>
+                    <Image></Image>
+                    <TextDiv>
+                        <Text>이름 : ㅇㄱㅎ</Text>
+                        <Text>아이디 : khtkhtkht</Text>
+                        <Text>전화번호 : 01012345678</Text>
+                    </TextDiv>
+                </Div>
             </>
         ) : (
             <>
@@ -59,6 +65,10 @@ function ResultPage() {
             </>
         )}
     </Center>
+    <ButtonDiv>
+        <BackButton />
+        <NextButton />
+    </ButtonDiv>
   </Background>
   );
 }
@@ -69,6 +79,7 @@ export const Background = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   
   @media only screen and (max-width: ${breakpoints.small}) {
     width: 700px;
@@ -76,8 +87,7 @@ export const Background = styled.div`
 `;
 
 export const Center = styled.div`
-  width: 50vw;
-  height: 100vh;
+  width: 45vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,13 +99,14 @@ export const Center = styled.div`
 `;
 
 export const Div = styled.div`
-    width: 50vw;
-    height: 15vh;
+    width: 45vw;
+    height: 13vh;
     border-radius: 20px;
-    background-color: ${color.Gray[1]};
+    border: solid 1px ${color.Blue[10]};
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 1.5vh 0;
 
     &:hover {
         cursor: pointer;
@@ -109,13 +120,14 @@ export const Div = styled.div`
 export const Image = styled.div`
     width: 100px;
     height: 100px;
-    background-color: ${color.Gray[3]};
+    background-color: ${color.Gray[2]};
     border-radius: 50%;
 `;
 
 export const TextDiv = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 30vw;
 
     @media only screen and (max-width: ${breakpoints.small}) {
@@ -127,18 +139,6 @@ export const Text = styled.div`
     font-size: 1em;
     font-weight: 400;
     color: ${color.Black};
-    margin: 1vh 0;
-`;
-
-export const Border = styled.div`
-    width: 50vw;
-    height: 1px;
-    background-color: ${color.Gray[2]};
-    margin: 3vh 0;
-
-    @media only screen and (max-width: ${breakpoints.small}) {
-        width: 500px;
-    }
 `;
 
 export const BoldText = styled.div`
@@ -169,5 +169,10 @@ export const Button = styled.button`
         background-color: ${color.Blue[8]};
     }
 `;
+
+export const ButtonDiv = styled.div`
+    display: flex;
+    gap: 5vw;
+`
 
 export default ResultPage;
