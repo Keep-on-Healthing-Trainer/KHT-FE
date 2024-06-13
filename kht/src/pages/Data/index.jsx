@@ -4,7 +4,30 @@ import { styled } from "styled-components";
 import { color } from "../../styles/theme";
 import { breakpoints } from "../../styles/device";
 
+import Chart from "./LineChart";
+
 function DataPage() {
+  const data = {
+    "totalCounts": 200,
+    "exerciseResponses": [
+        {
+            "id": 1,
+            "count": 30,
+            "exerciseDate": "04.06"
+        },
+        {
+            "id": 2,
+            "count": 70,
+            "exerciseDate": "04.07"
+        },
+        {
+            "id": 1,
+            "count": 100,
+            "exerciseDate": "04.08"
+        }
+    ]
+}
+
   return (
     <Background>
         <Center>
@@ -37,6 +60,7 @@ function DataPage() {
                   </TitleDiv>
                 </Div>
             </Top>
+            <Chart data={data.exerciseResponses}></Chart>
         </Center>
     </Background>
   );
@@ -60,7 +84,8 @@ export const Center = styled.div`
   border-radius: 25px;
   border: solid 1px ${color.Gray[2]};
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const Top = styled.div`
