@@ -6,7 +6,7 @@ const useXY = (data) => {
 
     const maxCount = data.reduce((max, obj) => Math.max(max, obj.count), -Infinity);
     const itemCount = data.length;
-    const maxLineHeight = 200;
+    const maxLineHeight = 300;
     const maxLineWidth = 700;
 
     const interval = maxLineWidth / (itemCount - 1 || 1);

@@ -4,37 +4,44 @@ import { styled } from "styled-components";
 import useLine from './useLine';
 import { breakpoints } from "../../../styles/device";
 import { color } from "../../../styles/theme";
+import { Background } from "..";
 
 const LineChart = ({ points, data }) => {
     const [lines] = useLine(points);
 
     return (
         <Box>
-            <svg>
+            <Svg viewBox="0 0 700 350">
                 {lines.map(({ x1, x2, y1, y2 }, index) => (
-                    <GraphLine x1={x1} x2={x2} y1={y1} y2={y2} key={index} stroke={color.Blue[6]} strokeWidth="1" />
+                    <GraphLine x1={x1} x2={x2} y1={y1} y2={y2} stroke={color.Blue[6]} strokeWidth="1" />
                 ))}
                 {points.map(({ x, y }, index) => {
                     return(
                     <>
-                        <GraphCircle cx={x} cy={y} r="1" key={index}></GraphCircle>
-                        <Text x={x} y={100} key={index+'00'}>
+                        <GraphCircle cx={x} cy={y} r="1"></GraphCircle>
+                        <Text x={x} y={320}>
                         {data[index].exerciseDate}
                         </Text>
                     </>
                     );
                 })}
-            </svg>
+            </Svg>
         </Box>
     );
 }
 
 const Box = styled.div`
     width: 700px;
-    height: 300px;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 15px 0;
+`;
+
+const Svg = styled.svg`
+    width: 100%;
+    height: 100%;
 `;
 
 const GraphLine = styled.line`
