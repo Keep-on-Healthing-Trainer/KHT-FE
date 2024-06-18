@@ -24,6 +24,16 @@ function DataPage() {
             "id": 1,
             "count": 100,
             "exerciseDate": "04.08"
+        },
+        {
+          "id": 1,
+          "count": 100,
+          "exerciseDate": "04.08"
+        },
+        {
+          "id": 1,
+          "count": 100,
+          "exerciseDate": "04.08"
         }
     ]
 }
